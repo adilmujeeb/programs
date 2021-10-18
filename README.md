@@ -1,2 +1,2 @@
-# geekspractice
-This is repository for geeksforgeeks assignments
+# Programs
+This is repository for various problem solving (DS, Algo) from different sources (like geeksforgeeks, FAANG assignments)

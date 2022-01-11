@@ -41,7 +41,6 @@ void create_list() {
            ptr = ptr->next;
        }
    }
-   display_list();
 }
 
 void display_list() {

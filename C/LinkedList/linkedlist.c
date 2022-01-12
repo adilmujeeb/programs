@@ -263,6 +263,19 @@ void del_node() {
        }
 }
 
+void reverse_list() {
+    struct Node *current, *prev = NULL, *next;
+    current = head;
+
+    while (current != NULL) {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+    head = prev;
+}
+
 int main() {
     int choice = -1;
     char ch = 'y';
@@ -273,7 +286,8 @@ int main() {
        printf("2. Diplay List\n");
        printf("3. Add Node\n");
        printf("4. Delete Node\n");
-       printf("5. Exit\n");
+       printf("5. Reverse List\n");
+       printf("6. Exit\n");
        printf("Enter choice:");
        scanf("%d", &choice);
 
@@ -291,6 +305,9 @@ int main() {
                del_node();
                break;
            case 5:
+               reverse_list();
+               break;
+           case 6:
                exit(0);
            default:
                printf("\nIncorrect choice\n");

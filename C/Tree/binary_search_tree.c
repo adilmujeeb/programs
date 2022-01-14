@@ -53,14 +53,9 @@ void tree_display(struct BstNode *root) {
       return;
    } 
  
-  if(temp->left != NULL) {
-      tree_display(temp->left);
-      printf(" %d", temp->data);
-      tree_display(temp->right);
-   } else {
-      printf(" %d", temp->data);
-      tree_display(temp->right);
-   }
+   tree_display(temp->left);
+   printf(" %d", temp->data);
+   tree_display(temp->right);
 }
 
 int tree_height(struct BstNode *root) {

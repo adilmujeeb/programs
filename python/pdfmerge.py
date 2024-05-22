@@ -1,3 +1,7 @@
+# 101 Python Automation Scripts: Streamlining Tasks and Boosting Productivity
+# https://medium.com/@tushar_aggarwal/a-comprehensive-guide-to-python-automation-streamlining-tasks-and-boosting-productivity-fad00c5b62c5
+
+
 from PyPDF2 import PdfMerger
 
 # Create a PdfMerger object
